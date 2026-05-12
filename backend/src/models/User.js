@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const addressSchema = new mongoose.Schema({
   fullName: String,
   phone: String,
-  detail: String,
+  street: String,
   city: String
 });
 

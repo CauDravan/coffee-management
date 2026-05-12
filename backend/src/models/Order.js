@@ -37,7 +37,7 @@ const shippingAddressSchema = new mongoose.Schema(
       required: true
     },
 
-    detail: {
+    street: {
       type: String,
       required: true
     },
