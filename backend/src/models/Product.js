@@ -12,13 +12,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       default: ""
     },
-
-    status: {
-      type: String,
-      enum: ["available", "hidden"],
-      default: "available"
-    },
-
+    
     price: {
       type: Number,
       required: true,
@@ -36,10 +30,26 @@ const productSchema = new mongoose.Schema(
       default: ""
     },
 
+    status: {
+      type: String,
+      enum: ["available", "hidden"],
+      default: "available"
+    },
+
     category: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Category",
       required: true
+    },
+
+    sold: {
+      type: Number,
+      default: 0
+    },
+
+    rating: {
+      type: Number,
+      default: 0
     }
   },
   {

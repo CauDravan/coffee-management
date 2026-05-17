@@ -8,6 +8,16 @@ const orderItemSchema = new mongoose.Schema(
       required: true
     },
 
+    name: {
+      type: String,
+      required: true
+    },
+
+    image: {
+      type: String,
+      default: ""
+    },
+
     quantity: {
       type: Number,
       required: true,
@@ -37,7 +47,7 @@ const shippingAddressSchema = new mongoose.Schema(
       required: true
     },
 
-    street: {
+    detail: {
       type: String,
       required: true
     },
