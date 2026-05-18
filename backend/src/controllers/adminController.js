@@ -40,6 +40,20 @@ export const deleteProduct = async (req, res) => {
   }
 };
 
+export const createCategory = async (req, res) => {
+  try {
+    res.status(201).json({
+      success: true,
+      message: "Category created"
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+};
+
 export const getAllOrders = async (req, res) => {
   try {
     res.status(200).json({
@@ -95,3 +109,4 @@ export const deleteUser = async (req, res) => {
     });
   }
 };
+
