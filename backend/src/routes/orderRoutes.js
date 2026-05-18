@@ -9,4 +9,4 @@ router.get('/:id', orderController.getOrderById);
 
 router.post('/', protect, orderController.createOrder);
 
-module.exports = router;
+export default router;

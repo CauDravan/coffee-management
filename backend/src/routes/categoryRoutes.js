@@ -4,4 +4,4 @@ const categoryController = require('../controllers/categoryController');
 
 router.get('/', categoryController.getAllCategories);
 
-module.exports = router;
+export default router;

@@ -25,4 +25,4 @@ router.get('/users', protect, admin, adminController.getAllUsers);
 
 router.delete('/users/:id', adminController.deleteUser);
 
-module.exports = router;
+export default router;
