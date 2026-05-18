@@ -1,4 +1,4 @@
-exports.createOrder = async (req, res) => {
+export const createOrder = async (req, res) => {
   try {
     res.status(201).json({
       success: true,
@@ -12,7 +12,7 @@ exports.createOrder = async (req, res) => {
   }
 };
 
-exports.getMyOrders = async (req, res) => {
+export const getMyOrders = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -26,7 +26,7 @@ exports.getMyOrders = async (req, res) => {
   }
 };
 
-exports.getOrderById = async (req, res) => {
+export const getOrderById = async (req, res) => {
   try {
     res.status(200).json({
       success: true,

@@ -1,4 +1,4 @@
-exports.getAllProducts = async (req, res) => {
+export const getAllProducts = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -12,7 +12,7 @@ exports.getAllProducts = async (req, res) => {
   }
 };
 
-exports.getProductById = async (req, res) => {
+export const getProductById = async (req, res) => {
   try {
     res.status(200).json({
       success: true,

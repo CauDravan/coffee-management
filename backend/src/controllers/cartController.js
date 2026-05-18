@@ -1,4 +1,4 @@
-exports.getCart = async (req, res) => {
+export const getCart = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -12,7 +12,7 @@ exports.getCart = async (req, res) => {
   }
 };
 
-exports.addToCart = async (req, res) => {
+export const addToCart = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -26,7 +26,7 @@ exports.addToCart = async (req, res) => {
   }
 };
 
-exports.updateCartItem = async (req, res) => {
+export const updateCartItem = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -40,7 +40,7 @@ exports.updateCartItem = async (req, res) => {
   }
 };
 
-exports.removeFromCart = async (req, res) => {
+export const removeFromCart = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -54,7 +54,7 @@ exports.removeFromCart = async (req, res) => {
   }
 };
 
-exports.clearCart = async (req, res) => {
+export const clearCart = async (req, res) => {
   try {
     res.status(200).json({
       success: true,

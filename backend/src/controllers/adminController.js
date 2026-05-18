@@ -1,4 +1,4 @@
-exports.createProduct = async (req, res) => {
+export const createProduct = async (req, res) => {
   try {
     res.status(201).json({
       success: true,
@@ -12,7 +12,7 @@ exports.createProduct = async (req, res) => {
   }
 };
 
-exports.updateProduct = async (req, res) => {
+export const updateProduct = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -26,7 +26,7 @@ exports.updateProduct = async (req, res) => {
   }
 };
 
-exports.deleteProduct = async (req, res) => {
+export const deleteProduct = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -40,7 +40,7 @@ exports.deleteProduct = async (req, res) => {
   }
 };
 
-exports.getAllOrders = async (req, res) => {
+export const getAllOrders = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -54,7 +54,7 @@ exports.getAllOrders = async (req, res) => {
   }
 };
 
-exports.updateOrderStatus = async (req, res) => {
+export const updateOrderStatus = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -68,7 +68,7 @@ exports.updateOrderStatus = async (req, res) => {
   }
 };
 
-exports.getAllUsers = async (req, res) => {
+export const getAllUsers = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -82,7 +82,7 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
-exports.deleteUser = async (req, res) => {
+export const deleteUser = async (req, res) => {
   try {
     res.status(200).json({
       success: true,

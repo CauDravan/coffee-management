@@ -1,4 +1,4 @@
-exports.register = async (req, res) => {
+export const register = async (req, res) => {
   try {
     res.status(201).json({
       success: true,
@@ -12,7 +12,7 @@ exports.register = async (req, res) => {
   }
 };
 
-exports.login = async (req, res) => {
+export const login = async (req, res) => {
   try {
     res.status(200).json({
       success: true,
@@ -26,7 +26,7 @@ exports.login = async (req, res) => {
   }
 };
 
-exports.getProfile = async (req, res) => {
+export const getProfile = async (req, res) => {
   try {
     res.status(200).json({
       success: true,

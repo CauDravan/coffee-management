@@ -1,9 +1,10 @@
-const express = require('express');
-const router = express.Router();
+import express from 'express';
 
-const adminController = require('../controllers/adminController');
-const { protect } = require('../middleware/authMiddleware');
-const { admin } = require('../middleware/adminMiddleware');
+import adminController from '../controllers/adminController.js';
+import { protect } from '../middleware/authMiddleware.js';
+import { admin } from '../middleware/adminMiddleware.js';
+
+const router = express.Router();
 
 /// Product Management
 router.post('/products', adminController.createProduct);

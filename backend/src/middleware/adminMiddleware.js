@@ -1,4 +1,4 @@
-exports.admin = (req, res, next) => {
+export const admin = (req, res, next) => {
   if (req.user.role !== "admin") {
     return res.status(403).json({
       success: false,

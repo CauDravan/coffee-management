@@ -1,4 +1,4 @@
-exports.protect = async (req, res, next) => {
+export const protect = async (req, res, next) => {
   try {
     // fake auth for now
     req.user = {
